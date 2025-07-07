@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #0095FF;
+  --secondary-color: #000428;
+  --accent-color: #001D3C;
+  --color-light: #f5f5f5;
+  --color-dark: #0c0c0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+

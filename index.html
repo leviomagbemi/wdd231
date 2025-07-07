@@ -4,14 +4,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 231 - Web Frontend Development 1</title>
+  <title>Levi Omagbemi - Course Home Page</title>
   <meta name="description"
-    content="Web Frontend Development 1 - A course design to gain mastery in the area of web technologies and design.">
+    content="This page contains Levi Omagbemi courses taken since he started a software developer degree at BYU Pathway Worldwide. The courses taken are both web development courses and computer science courses.">
   <meta name="author" content="Levi Omagbemi">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+    rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
 </head>
 
 <body>
-  <h1>WDD 231 - Web Frontend Development</h1>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="site logo" width="30" height="30">
+      <span>Course Home Page</span>
+    </div>
+
+    <button id="nav-button" class="hamburger" aria-label="toggle navigation menu"></button>
+
+    <nav id="nav-bar" class="navigation" role="navigation" aria-label="main navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <!-- About section -->
+    <section class="about">
+      <h2 class="heading">About Me</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore amet minima in sequi porro quisquam illum sint
+        quasi aliquid, veritatis maiores magnam nisi nobis dolores omnis necessitatibus quod, doloribus cum et unde
+        laudantium accusantium culpa at eaque? Quasi autem hic delectus, in quos minus, dolorem amet accusamus,
+        laudantium omnis quidem.
+      </p>
+    </section>
+
+    <section class="student-image">
+      <h2 class="heading">Student Photo</h2>
+      <div>
+        <img src="images/student-image.webp" alt="student image" width="200" height="200" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="course">
+      <h2 class="heading">Web Certificate Courses</h2>
+      <ul class="course-nav" id="course-navlist" role="tablist">
+        <li class="current" role="tab">All</li>
+        <li role="tab">CSE</li>
+        <li role="tab">WDD</li>
+      </ul>
+      <ul class="course-list" id="course-list">
+        <!-- Dynamic content -->
+      </ul>
+      <p>The total credits for the course listed above is 
+        <span id="course-credit">
+          <!-- Dynamic content -->
+        </span>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <nav aria-label="social media links">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/levi-omagbemi/">
+            <img src="images/linkedin-logo.svg" alt="LinkedIn logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/leviomagbemi">
+            <img src="images/github-logo.svg" alt="GitHub logo">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/x-logo.svg" alt="X logo">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <p>
+      &copy; <span id="current-year">
+        <!-- Dynamic content -->
+      </span>. Levi Omagbemi. Delta, Nigeria
+    </p>
+    <p id="last-modified">
+      <!-- Dynamic content -->
+    </p>
+  </footer>
 </body>
 
 </html>

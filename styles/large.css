@@ -1,0 +1,41 @@
+@media screen and (min-width: 700px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h1 {
+    grid-column: 1/5;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+  }
+
+  .navigation ul li:nth-child(even) {
+    border-block: none;
+  }
+
+  .about {
+    grid-column: 1/4;
+  }
+
+  .student-image {
+    grid-column: 4/5;
+  }
+
+  .course {
+    grid-column: 1/5;
+  }
+
+  .course .course-list {
+    flex-direction: row;
+  }
+}
