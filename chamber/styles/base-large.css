@@ -1,0 +1,28 @@
+@media screen and (min-width: 700px) {
+  nav {
+    display: block;
+    grid-column: 2 / 4;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-self: end;
+  }
+
+  .logo {
+  grid-column: 1 / 2;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+  
+  #nav-button {
+    display: none;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

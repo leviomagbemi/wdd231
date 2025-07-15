@@ -1,0 +1,125 @@
+{
+  "businesses": [
+    {
+      "name": "GTBank (Guaranty Trust Bank)",
+      "category": "Banking & Financial Services",
+      "address": "Plot 635, Akin Adesola Street, Victoria Island, Lagos",
+      "phone": "+234-1-448-5500",
+      "website": "https://www.gtbank.com",
+      "email": "info@gtbank.com",
+      "image": "images/gtbank.webp",
+      "membershipLevel": 3,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Commercial Banking", "Corporate Banking", "Digital Banking", "Investment Banking"],
+      "description": "Leading Nigerian commercial bank providing comprehensive financial services across West Africa."
+    },
+    {
+      "name": "MTN Nigeria",
+      "category": "Telecommunications",
+      "address": "Fairgrounds Office Complex, Tiamiyu Savage Street, Victoria Island, Lagos",
+      "phone": "+234-803-0000-180",
+      "website": "https://www.mtnnigeria.net",
+      "email": "customercare@mtnnigeria.net",
+      "image": "images/mtn.webp",
+      "membershipLevel": 3,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Mobile Network Services", "Data Services", "Digital Financial Services", "Enterprise Solutions"],
+      "description": "Nigeria's largest telecommunications company providing mobile voice, data, and digital services."
+    },
+    {
+      "name": "Dangote Cement",
+      "category": "Manufacturing",
+      "address": "1 Alfred Rewane Road, Ikoyi, Lagos",
+      "phone": "+234-1-448-0815",
+      "website": "https://www.dangotecement.com",
+      "email": "info@dangotecement.com",
+      "image": "images/dangote.webp",
+      "membershipLevel": 3,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Cement Manufacturing", "Building Materials", "Construction Solutions"],
+      "description": "Africa's largest cement producer and leading manufacturer of building materials."
+    },
+    {
+      "name": "Shoprite Nigeria",
+      "category": "Retail",
+      "address": "Ikeja City Mall, Obafemi Awolowo Way, Ikeja, Lagos",
+      "phone": "+234-1-631-0000",
+      "website": "https://www.shoprite.co.za/ng",
+      "email": "customerservice@shoprite.co.za",
+      "image": "images/shoprite.webp",
+      "membershipLevel": 2,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Grocery Retail", "Pharmacy", "Money Market", "Liquor Store"],
+      "description": "Leading retail chain offering groceries, household items, and pharmacy services across Nigeria."
+    },
+    {
+      "name": "Jumia Nigeria",
+      "category": "E-commerce",
+      "address": "Plot 1517, Cadastral Zone A03, Wuse II, Abuja",
+      "phone": "+234-700-5864-200",
+      "website": "https://www.jumia.com.ng",
+      "email": "ng-customerservice@jumia.com",
+      "image": "images/jumia.webp",
+      "membershipLevel": 2,
+      "state": "Abuja",
+      "city": "Abuja",
+      "services": ["Online Marketplace", "Logistics", "Payment Services", "Digital Services"],
+      "description": "Leading e-commerce platform connecting buyers and sellers across Nigeria."
+    },
+    {
+      "name": "Oando Plc",
+      "category": "Oil & Gas",
+      "address": "2 Ajose Adeogun Street, Victoria Island, Lagos",
+      "phone": "+234-1-448-7500",
+      "website": "https://www.oandoplc.com",
+      "email": "info@oandoplc.com",
+      "image": "images/oando.webp",
+      "membershipLevel": 3,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Oil & Gas Exploration", "Refining", "Marketing", "Power Generation"],
+      "description": "Leading indigenous oil and gas company with integrated energy solutions."
+    },
+    {
+      "name": "Nestle Nigeria",
+      "category": "Manufacturing",
+      "address": "22-24 Industrial Avenue, Ilupeju, Lagos",
+      "phone": "+234-1-280-3840",
+      "website": "https://www.nestle-cwa.com/ng",
+      "email": "info@ng.nestle.com",
+      "image": "images/nestle.webp",
+      "membershipLevel": 1,
+      "state": "Lagos",
+      "city": "Lagos",
+      "services": ["Food & Beverages", "Nutrition", "Infant Nutrition", "Confectionery"],
+      "description": "Leading food and beverage company committed to enhancing quality of life through nutrition."
+    }
+  ],
+  "membershipLevels": {
+    "1": {
+      "name": "Standard Member",
+      "description": "Basic membership with standard benefits",
+      "color": "#f8fafc",
+      "backgroundColor": "#1e40af",
+      "borderColor": "#1e293b"
+    },
+    "2": {
+      "name": "Silver Member",
+      "description": "Enhanced membership with additional benefits",
+      "color": "#f8fafc",
+      "backgroundColor": "#1e293b",
+      "borderColor": "#1e293b"
+    },
+    "3": {
+      "name": "Gold Member",
+      "description": "Premium membership with full benefits",
+      "color": "#1e293b",
+      "backgroundColor": "#FFD700",
+      "borderColor": "#1e293b"
+    }
+  }
+}
