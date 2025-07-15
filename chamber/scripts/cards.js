@@ -161,9 +161,13 @@ function createListCard(business){
   cardCategory.textContent = business.category;
   cardInfo.className = "card-info";
   cardAddress.textContent = business.address;
+  cardAddress.style.listStyleImage = "url(images/location-icon.svg)";
   cardPhone.textContent = business.phone;
+  cardPhone.style.listStyleImage = "url(images/phone-icon.svg)";
   cardUrl.textContent = business.website;
+  cardUrl.style.listStyleImage = "url(images/globe-icon.svg)";
   cardEmail.textContent = business.email;
+  cardEmail.style.listStyleImage = "url(images/envelope-icon.svg)";
   cardCta.className = "card-cta";
   cardCta.textContent = "Visit Website";
   cardCta.href = business.website;
