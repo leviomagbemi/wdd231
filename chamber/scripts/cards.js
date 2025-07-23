@@ -5,17 +5,27 @@ const listBtn = document.querySelector("#list-view-btn");
 let members;
 
 document.addEventListener("DOMContentLoaded",async () => {
+  const currentPage = window.location.pathname;
+  console.log(currentPage)
   members = await getMembers();
+  let businesses;
 
-  members.businesses.forEach((business) => createGridCard(business, members.membershipLevels));
-})
+  if(currentPage == "/chamber" || currentPage == "/chamber/index.html"){
+    businesses = members.businesses.filter((business) => business.membershipLevel > 1).slice(randomNumber());
+  } else {
+    businesses = members.businesses;
+  }
+
+  businesses.forEach((business) => createGridCard(business, members.membershipLevels));
+});
 
 async function getMembers(){
   const data = await fetch("data/members.json");
   const response = await data.json();
 
   return response;
-}
+};
+
 
 gridBtn.addEventListener("click", async() => {
   listBtn.classList.remove("current");
@@ -27,7 +37,7 @@ gridBtn.addEventListener("click", async() => {
 
 listBtn.addEventListener("click", async() => {
   gridBtn.classList.remove("current");
-  listBtn.classList.add("current");
+  listBtn.classList.add("current"); 
   cards.classList.add("list");
   cards.innerHTML = ""
   members.businesses.forEach((business) => createListCard(business));
@@ -190,4 +200,8 @@ function createListCard(business){
   card.appendChild(cardImage);
   
   cards.append(card);
+}
+
+function randomNumber(){
+  return Math.floor(Math.random() * 2) + 2;
 }

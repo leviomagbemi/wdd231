@@ -1,0 +1,26 @@
+@media screen and (min-width: 700px) {
+  .hero div {
+    width: 70%;
+  }
+
+  .hero div h1 {
+    font-size: 48px;
+  }
+
+  .hero div p {
+    width: 70%;
+    margin: auto;
+  }
+
+  .home > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .home .events {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+
+}

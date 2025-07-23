@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levi's Chamber of Commerce</title>
+  <meta name="description"
+    content="Levi's Chambers of Commerce - We connect and building businesses across Nigeria. Join us today and be a part of something great.">
+  <meta name="author" content="Levi Omagbemi">
+  <meta property="og:title" content="Levi's Chambers of Commerce">
+  <meta property="og:description"
+    content="Levi's Chambers of Commerce - We connect and building businesses across Nigeria. Join us today and be a part of something great.">
+  <meta property="og:image" content="https://leviomagbemi.github.io/wdd231/chamber/images/home-meta-image.jpg">
+  <meta property="og:url" content="https://leviomagbemi.github.io/wdd231/chamber">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="styles/base-small.css">
+  <link rel="stylesheet" href="styles/base-large.css">
+  <link rel="stylesheet" href="styles/home-small.css">
+  <link rel="stylesheet" href="styles/home-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..700;1,100..700&family=Roboto+Flex:opsz,wght@8..144,100..700&display=swap"
+    rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/cards.js" defer></script>
+   <script src="scripts/weather.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="site logo" width="60" height="60">
+      <span>Levi's Chamber <br>of Commerce</span>
+    </div>
+
+    <button id="nav-button" class="hamburger" aria-label="toggle navigation menu"></button>
+
+    <nav id="nav-bar" class="navigation" aria-label="main navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 1000px )" srcset="images/chamber-hero-large.webp">
+        <source media="(min-width: 500px)" srcset="images/chamber-hero-medium.webp">
+        <img src="images/chamber-hero-small.webp" alt="Warri city" width="500" height="250">
+      </picture>
+      <div>
+        <h1>Connecting Business. Building Community.</h1>
+        <p>Join over 2,500 local businesses working together to drive economic growth, advocate for business interests, and strengthen our community.</p>
+        <a href="#">Become a Member</a>
+      </div>
+    </section>
+
+    <section class="home">
+      <h2>Home</h2>
+      <div>
+        <div class="events box">
+          <h3>Events</h3>
+
+          <div class="event">
+            <h4>Digital Transformation in Banking Summit</h4>
+            <small>Hosted by GTBank</small>
+            <p>Explore the future of finance with industry leaders. This summit will cover innovations in mobile banking, fintech collaborations, and cybersecurity. A must-attend for financial professionals.</p>
+          </div>
+
+          <hr>
+
+           <div class="event">
+            <h4>5G and the Future of Nigerian Connectivity</h4>
+            <small>Presented by MTN</small>
+            <p>Join MTN for a deep dive into the potential of 5G technology. Learn how it will revolutionize industries from entertainment to healthcare and what it means for your business.</p>
+          </div>
+
+          <hr>
+
+          <div class="event">
+            <h4>E-commerce &amp; Logistics Conference</h4>
+            <small>Sponsored by Jumia &amp; Shoprite</small>
+            <p>A joint conference addressing the challenges and opportunities in Nigeria's booming e-commerce sector. Sessions will focus on last-mile delivery, online payment solutions, and customer experience.</p>
+          </div>
+        </div>
+
+        <div class="current-weather box">
+          <h3>Current Weather</h3>
+
+          <div id="current-weather">
+            <!--dynamic content-->
+          </div>
+        </div>
+        
+        <div class="weather-forecast box">
+          <h3>Weather Forecast</h3>
+        </div>
+      </div>
+
+      <section>
+        <div id="cards" class="grid">
+        <!-- Dynamic content -->
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>Levi's Chamber of Commerce</p>
+      <ul>
+        <li>Jakpa Road, Warri</li>
+        <li>No. 145 close to White House Junction</li>
+        <li><a href="#">leviomagbemi15@gmail.com</a></li>
+        <li><a href="tel:+2348140406187">+234 814 040 6187</a></li>
+      </ul>
+    </div>
+    <div class="social-media-links">
+      <a href="https://github.com/leviomagbemi">
+        <img src="images/youtube-logo.svg" alt="YouTube logo" width="44" height="44" loading="lazy">
+      </a>
+      <a href="https://x.com/LeviOmagbemi">
+        <img src="images/x-logo.svg" alt="X/Twitter logo" width="44" height="44" loading="lazy">
+      </a>
+      <a href="https://www.linkedin.com/in/levi-omagbemi/">
+        <img src="images/linkedin-logo.svg" alt="LinkedIn logo" width="44" height="44" loading="lazy">
+      </a>
+    </div>
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>Levi Omagbemi</p>
+      <p>
+        &copy; <span id="current-year">
+          <!-- Dynamic content -->
+        </span>. Levi's Chamber of Commerce
+      </p>
+      <p id="last-modified">
+        <!-- Dynamic content -->
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
