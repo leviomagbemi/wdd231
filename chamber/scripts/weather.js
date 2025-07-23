@@ -13,7 +13,6 @@ async function apiFetch(url){
     
     if (response.ok){
       const data = await response.json();
-      console.table(data);
       return data;
     } else {
       throw error(await response.text());

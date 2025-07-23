@@ -1,13 +1,10 @@
 const cards = document.querySelector("#cards");
-const gridBtn = document.querySelector("#grid-view-btn");
-const listBtn = document.querySelector("#list-view-btn");
-
-let members;
 
 document.addEventListener("DOMContentLoaded",async () => {
-  members = await getMembers();
+  const members = await getMembers();
+ const businesses = members.businesses.filter((business) => business.membershipLevel > 1).slice(randomNumber());
 
-  members.businesses.forEach((business) => createGridCard(business, members.membershipLevels));
+  businesses.forEach((business) => createGridCard(business, members.membershipLevels));
 });
 
 async function getMembers(){
@@ -16,23 +13,6 @@ async function getMembers(){
 
   return response;
 };
-
-
-gridBtn.addEventListener("click", async() => {
-  listBtn.classList.remove("current");
-  gridBtn.classList.add("current");
-  cards.classList.remove("list");
-  cards.innerHTML = ""
-  members.businesses.forEach((business) => createGridCard(business, members.membershipLevels));
-});
-
-listBtn.addEventListener("click", async() => {
-  gridBtn.classList.remove("current");
-  listBtn.classList.add("current"); 
-  cards.classList.add("list");
-  cards.innerHTML = ""
-  members.businesses.forEach((business) => createListCard(business));
-});
 
 function createGridCard(business, membership){
   const membershipDetails = membership[business.membershipLevel];
@@ -127,68 +107,6 @@ function createGridCard(business, membership){
   cards.append(card);
 }
 
-function createListCard(business){
-  // Create all elements
-  const card = document.createElement("div");
-
-  const cardHeader = document.createElement("div");
-  const cardImage = document.createElement("img");
-  const cardHeading = document.createElement("h2");
-  const cardCategory = document.createElement("p");
-
-  const cardInfo = document.createElement("div");
-
-  // Contact information element
-  const cardContactList = document.createElement("ul");
-  const cardAddress = document.createElement("li");
-  const cardPhone = document.createElement("li");
-  const cardUrl = document.createElement("li");
-  const cardEmail = document.createElement("li");
-
-
-  const cardCta = document.createElement("a");
-
-
-  // Set all attributes and text content
-  card.className = "card";
-  card.id = "list-card";
-  cardHeader.className = "card-header";
-  cardImage.width = 100;
-  cardImage.height = 100;
-  cardImage.loading = "lazy"
-  cardImage.src = business.image;
-  cardImage.alt = business.name;
-  cardHeading.textContent = business.name;
-  cardCategory.textContent = business.category;
-  cardInfo.className = "card-info";
-  cardAddress.textContent = business.address;
-  cardAddress.style.listStyleImage = "url(images/location-icon.svg)";
-  cardPhone.textContent = business.phone;
-  cardPhone.style.listStyleImage = "url(images/phone-icon.svg)";
-  cardUrl.textContent = business.website;
-  cardUrl.style.listStyleImage = "url(images/globe-icon.svg)";
-  cardEmail.textContent = business.email;
-  cardEmail.style.listStyleImage = "url(images/envelope-icon.svg)";
-  cardCta.className = "card-cta";
-  cardCta.textContent = "Visit Website";
-  cardCta.href = business.website;
-  cardCta.target = "blank";
-
-  // Append Elements
-  cardHeader.appendChild(cardHeading);
-  cardHeader.appendChild(cardCategory);
-
-  cardContactList.appendChild(cardAddress);
-  cardContactList.appendChild(cardPhone);
-  cardContactList.appendChild(cardUrl);
-  cardContactList.appendChild(cardEmail);
-
-  cardInfo.appendChild(cardHeader);
-  cardInfo.appendChild(cardContactList);
-  cardInfo.appendChild(cardCta);
-
-  card.appendChild(cardInfo);
-  card.appendChild(cardImage);
-  
-  cards.append(card);
+function randomNumber(){
+  return Math.floor(Math.random() * 2) + 2;
 }
