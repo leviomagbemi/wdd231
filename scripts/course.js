@@ -82,6 +82,7 @@ const courses = [
 const courseNavItems = document.querySelector("#course-navlist").querySelectorAll("li");
 const courseList = document.querySelector("#course-list");
 const courseCredit = document.querySelector("#course-credit");
+const courseDetails = document.querySelector("#course-details");
 
 // Variable to store last clicked course nav list item
 let courseLastClickedItem;
@@ -137,12 +138,42 @@ function renderCourses(courses){
 
   courses.forEach(course => {
     const li = document.createElement("li");
+    const courseName = `${course.subject} ${course.number}`
 
-    li.textContent = course.completed ? `\u2713 ${course.subject} ${course.number}` : `${course.subject} ${course.number}`;
+    li.textContent = course.completed ? `\u2713 ${courseName}` : `${courseName}`;
     li.className = course.completed ? "completed" : "";
+    li.setAttribute("courseName", courseName)
 
     courseList.appendChild(li);
   })
+}
+
+courseList.addEventListener("click", (e) => {
+    if(e.target.matches("li")){
+        const [courseSubject, courseNumber] = e.target.getAttribute("courseName").split(" ");
+
+        const course = courses.filter((course) => course.subject == courseSubject && course.number == courseNumber);
+
+        displayCourseDetails(course[0]);
+    }
+});
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
 }
 
 /*
