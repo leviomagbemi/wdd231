@@ -1,0 +1,14 @@
+main {
+  padding: 1rem;
+}
+
+#results {
+  background-color: var(--color-dark);
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-light);
+  gap: 1rem;
+}

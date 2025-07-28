@@ -1,0 +1,14 @@
+@media screen and (min-width: 700px) {
+  section {
+    display: flex;
+    gap: 1rem;
+  }
+
+  form {
+    flex: 1;
+  }
+
+  section > div {
+    flex: 1;
+  }
+}
