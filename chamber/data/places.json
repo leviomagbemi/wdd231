@@ -1,0 +1,52 @@
+{
+  "places":[
+    {
+      "title": "Effurun Roundabout",
+      "address": "Effurun-Sapele Rd, Effurun, Warri, Delta State",
+      "description": "The gateway into Warri's commercial district, symbolizing the city's vibrant and dynamic economy.",
+      "image": "effurun-roundabout.webp"
+    },
+    {
+      "title": "Olu of Warri Palace",
+      "address": "Ajamimogha Road, Warri, Delta State",
+      "description": "Historical royal residence of the Itsekiri people, representing centuries of cultural heritage and leadership.",
+      "image": "olu-palace.webp"
+    },
+    {
+      "title": "Delta Mall (Shoprite)",
+      "address": "Effurun Roundabout, Warri, Delta State",
+      "description": "Warri’s top shopping and lifestyle center, featuring a mix of global and local retail experiences.",
+      "image": "delta-mall.webp"
+    },
+    {
+      "title": "Warri Township Stadium",
+      "address": "Warri, Delta State",
+      "description": "Multi-purpose stadium and home ground to Warri Wolves FC, hosting sports and entertainment events.",
+      "image": "warri-stadium.webp"
+    },
+    {
+      "title": "Warri Port",
+      "address": "NPA Road, Warri, Delta State",
+      "description": "A vital commercial seaport linking Warri to maritime trade routes and inland cargo logistics.",
+      "image": "warri-port.webp"
+    },
+    {
+      "title": "Red Mangrove Forest",
+      "address": "Warri River Bank, Warri South-West LGA",
+      "description": "A unique ecological site featuring mangroves, vital to the Niger Delta's biodiversity.",
+      "image": "mangrove-forest.webp"
+    },
+    {
+      "title": "Osubi Airport",
+      "address": "Airport Road, Osubi, Warri, Delta State",
+      "description": "A key air transport terminal serving Warri and the Niger Delta region, enabling easy business and executive travel connections.",
+      "image": "osubi-airport.webp"
+    },
+    {
+      "title": "Nana Living History Museum",
+      "address": "Nana Olomu Palace Rd, Koko, Warri North LGA",
+      "description": "Historic site preserving the legacy of Chief Nana Olomu, a 19th-century Itsekiri merchant prince.",
+      "image": "nana-museum.webp"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+@media screen and (min-width: 1025px) {
+  body {
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+  }
+
+  #discover-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
