@@ -17,6 +17,10 @@
     grid-row: 2/2;
   }
 
+  .about .mission {
+    grid-column: 1;
+  }
+
   .about .values {
     grid-column: 1/3;
   }

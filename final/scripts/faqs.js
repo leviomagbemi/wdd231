@@ -10,7 +10,7 @@ async function getAnswers(){
 
     faqs = result;
   } catch (error) {
-    console.log(error)
+    throw error;
   }
 }
 
