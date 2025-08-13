@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  .desktop-nav-cta {
+    display: block;
+  }
+
+  nav .mobile-nav-cta {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-items: center;
+  }
+
+
+  nav.show {
+    grid-column: 2/3;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  #nav-button {
+    display: none;
+  }
+
+   footer .content-container {
+    flex-direction: row;
+  }
+
+  footer .contact-info {
+    flex: 2;
+  }
+
+  footer .stay-connected {
+    flex: 2;
+  }
+
+  footer .quick-links {
+    flex: 0.7;
+  }
+}

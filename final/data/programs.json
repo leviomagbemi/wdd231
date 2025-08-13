@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Software Development",
+    "description": "Learn to build real-world applications using modern programming languages, frameworks, and tools.",
+    "image": "images/program-coding.webp"
+  },
+  {
+    "title": "Robotics & AI",
+    "description": "Master the fundamentals of robotics, automation, and artificial intelligence through hands-on projects.",
+    "image": "images/program-robotics.webp"
+  },
+  {
+    "title": "UI/UX & Product Design",
+    "description": "Create intuitive, engaging user experiences with design thinking and industry-standard tools.",
+    "image": "images/program-design.webp"
+  },
+  {
+    "title": "Data Science & Analytics",
+    "description": "Transform raw data into actionable insights using modern analytics and machine learning techniques.",
+    "image": "images/program-data.webp"
+  },
+  {
+    "title": "Cybersecurity",
+    "description": "Learn how to protect systems and networks from cyber threats through practical security training.",
+    "image": "images/program-cybersecurity.webp"
+  },
+  {
+    "title": "Cloud Computing",
+    "description": "Gain hands-on skills in deploying, managing, and scaling applications in the cloud.",
+    "image": "images/program-cloud.webp"
+  },
+  {
+    "title": "IoT & Embedded Systems",
+    "description": "Design smart devices and connected systems that bridge the physical and digital worlds.",
+    "image": "images/program-iot.webp"
+  },
+  {
+    "title": "Game Development",
+    "description": "Create interactive games with modern engines and storytelling techniques.",
+    "image": "images/program-game.webp"
+  },
+  {
+    "title": "AR/VR Development",
+    "description": "Build immersive augmented and virtual reality experiences for multiple platforms.",
+    "image": "images/program-arvr.webp"
+  },
+  {
+    "title": "Entrepreneurship in Tech",
+    "description": "Learn how to turn tech ideas into startups through innovation, planning, and execution.",
+    "image": "images/program-entrepreneurship.webp"
+  }
+]

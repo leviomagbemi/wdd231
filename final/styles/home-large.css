@@ -1,0 +1,21 @@
+@media screen and (min-width: 1280px) {
+  .about .content-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .about img {
+    grid-column: 1/3;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about .story {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+
+  .about .values {
+    grid-column: 3/4;
+  }
+}
